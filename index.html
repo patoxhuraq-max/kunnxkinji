@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>khunxkinji payment</title>
+    <title>khunxkinji Payment</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -11,7 +11,7 @@
     <style>
         body {
             font-family: 'Prompt', sans-serif;
-            background: linear-gradient(135deg, #F9F5EF 0%, #FAEFE3 100%);
+            background: linear-gradient(135deg, #FBF8FA 0%, #F6EDF1 100%);
             min-height: 100vh;
         }
         
@@ -48,11 +48,11 @@
 
         /* การ์ดสไตล์ Glass ในโทนสีใหม่ */
         .glass-card {
-            background: rgba(250, 239, 227, 0.85);
+            background: rgba(249, 242, 244, 0.85);
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(232, 219, 209, 0.8);
-            box-shadow: 0 20px 50px -10px rgba(183, 164, 156, 0.15), 
+            border: 1px solid rgba(235, 221, 226, 0.8);
+            box-shadow: 0 20px 50px -10px rgba(180, 140, 155, 0.12), 
                         inset 0 2px 10px rgba(255, 255, 255, 0.8);
         }
 
@@ -77,23 +77,23 @@
                 extend: {
                     colors: {
                         cream: {
-                            50: '#F9F5EF',
-                            100: '#FAEFE3',
-                            200: '#E8DBD1',
+                            50: '#FBF8FA',
+                            100: '#F9F2F4',
+                            200: '#EBDDE2',
                         },
                         brown: {
-                            300: '#E8DBD1',
-                            400: '#B7A49C',
-                            500: '#8A756C',
-                            600: '#5C4A42',
+                            300: '#EBDDE2',
+                            400: '#C4AAB5',
+                            500: '#946E7E',
+                            600: '#5E424E',
                         },
                         pink: {
-                            50: '#F9F5EF',
-                            100: '#FAEFE3',
-                            200: '#E8DBD1',
-                            300: '#D8C6BB',
-                            400: '#B7A49C',
-                            500: '#8A756C',
+                            50: '#FBF8FA',
+                            100: '#F9F2F4',
+                            200: '#F6EDF1',
+                            300: '#FECEF1',
+                            400: '#EBDDE2',
+                            500: '#946E7E',
                         }
                     }
                 }
@@ -105,21 +105,21 @@
 
     <!-- Background Decorative SVGs -->
     <div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
-        <svg class="absolute top-[5%] left-[10%] w-8 h-8 text-[#E8DBD1] anim-float-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+        <svg class="absolute top-[5%] left-[10%] w-8 h-8 text-[#EBDDE2] anim-float-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
         <svg class="absolute top-[15%] left-[2%] w-6 h-6 text-white/80 anim-pulse" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-        <svg class="absolute top-[8%] left-[25%] w-4 h-4 text-[#E8DBD1]/60 anim-float-3" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/></svg>
-        <svg class="absolute top-[10%] right-[8%] w-10 h-10 text-[#E8DBD1] anim-float-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        <svg class="absolute top-[8%] left-[25%] w-4 h-4 text-[#EBDDE2]/60 anim-float-3" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/></svg>
+        <svg class="absolute top-[10%] right-[8%] w-10 h-10 text-[#FECEF1]/60 anim-float-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
         <svg class="absolute top-[2%] right-[20%] w-5 h-5 text-white/90 anim-float-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
-        <svg class="absolute top-[40%] -left-2 w-12 h-12 text-[#FAEFE3] anim-pulse" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-        <svg class="absolute top-[50%] right-[2%] w-6 h-6 text-[#E8DBD1] anim-float-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-        <svg class="absolute bottom-[10%] left-[10%] w-8 h-8 text-[#E8DBD1]/80 anim-float-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        <svg class="absolute top-[40%] -left-2 w-12 h-12 text-[#F6EDF1] anim-pulse" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        <svg class="absolute top-[50%] right-[2%] w-6 h-6 text-[#EBDDE2]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+        <svg class="absolute bottom-[10%] left-[10%] w-8 h-8 text-[#FECEF1]/70 anim-float-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
         <svg class="absolute bottom-[5%] right-[15%] w-7 h-7 text-white/80 anim-float-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
-        <svg class="absolute bottom-[20%] right-[5%] w-4 h-4 text-[#E8DBD1]/50 anim-pulse" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/></svg>
+        <svg class="absolute bottom-[20%] right-[5%] w-4 h-4 text-[#EBDDE2]/50 anim-pulse" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/></svg>
     </div>
 
     <!-- Toast Notification -->
-    <div id="toast" class="fixed bottom-8 left-1/2 transform -translate-x-1/2 bg-[#8A756C]/95 backdrop-blur-sm text-[#F9F5EF] px-6 py-3 rounded-full shadow-xl transition-all duration-300 opacity-0 translate-y-4 pointer-events-none z-50 flex items-center gap-2 font-medium text-sm border border-[#B7A49C]">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-5 h-5 text-[#E8DBD1]">
+    <div id="toast" class="fixed bottom-8 left-1/2 transform -translate-x-1/2 bg-[#946E7E]/95 backdrop-blur-sm text-[#FBF8FA] px-6 py-3 rounded-full shadow-xl transition-all duration-300 opacity-0 translate-y-4 pointer-events-none z-50 flex items-center gap-2 font-medium text-sm border border-[#C4AAB5]">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-5 h-5 text-[#EBDDE2]">
             <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
         คัดลอกเลขบัญชีเรียบร้อย !
@@ -130,11 +130,11 @@
         
         <!-- ส่วน Badges -->
         <div class="flex items-center justify-center gap-2 pt-1">
-            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-semibold bg-[#FAEFE3] text-brown-500 border border-[#E8DBD1] shadow-sm">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-semibold bg-[#F6EDF1] text-brown-500 border border-[#EBDDE2] shadow-sm">
                 <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
                 พร้อมใช้งาน
             </span>
-            <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-[11px] font-semibold bg-[#E8DBD1]/50 text-brown-500 border border-[#E8DBD1]">
+            <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-[11px] font-semibold bg-[#EBDDE2]/50 text-brown-500 border border-[#EBDDE2]">
                 khunxkinji
             </span>
         </div>
@@ -142,31 +142,31 @@
         <!-- Header -->
         <div class="text-center pt-1 pb-1 relative">
             <h1 class="text-2xl font-bold tracking-tight text-brown-500 flex items-center justify-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-[#B7A49C] anim-pulse">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-[#C4AAB5] anim-pulse">
                     <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
                 </svg>
                 khunxkinji
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-[#B7A49C] anim-pulse transform -scale-x-100">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-[#C4AAB5] anim-pulse transform -scale-x-100">
                     <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
                 </svg>
             </h1>
-            <p class="text-sm font-medium text-brown-400 mt-0.5">คำอธิบายแบบเตงได้มั้ยงับ</p>
+            <p class="text-sm font-medium text-brown-400 mt-0.5">khunxkinji how to pay</p>
         </div>
 
         <!-- ดีไซน์การ์ด Glass & App Style -->
         <div class="glass-card rounded-[40px] p-3 relative z-10">
             
-            <svg class="absolute -top-4 -left-2 w-9 h-9 text-[#B7A49C] anim-float-1 z-20 drop-shadow-sm" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-            <svg class="absolute top-[25%] -right-3 w-7 h-7 text-[#B7A49C] anim-float-2 z-20 drop-shadow-sm" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+            <svg class="absolute -top-4 -left-2 w-9 h-9 text-[#C4AAB5] anim-float-1 z-20 drop-shadow-sm" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            <svg class="absolute top-[25%] -right-3 w-7 h-7 text-[#FECEF1] anim-float-2 z-20 drop-shadow-sm" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
             <svg class="absolute bottom-[40%] -left-3 w-5 h-5 text-brown-400 anim-spin z-20 drop-shadow-sm" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
 
             <!-- รูปภาพป้ายสแกนชำระเงิน -->
             <div class="relative p-2 rounded-[36px] z-10">
                 <svg class="absolute inset-0 w-full h-full pointer-events-none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="2" y="2" width="calc(100% - 4px)" height="calc(100% - 4px)" rx="34" fill="none" stroke="#E8DBD1" stroke-width="2.5" stroke-dasharray="12 12" stroke-linecap="round" class="animate-dash" />
+                    <rect x="2" y="2" width="calc(100% - 4px)" height="calc(100% - 4px)" rx="34" fill="none" stroke="#EBDDE2" stroke-width="2.5" stroke-dasharray="12 12" stroke-linecap="round" class="animate-dash" />
                 </svg>
                 <div class="rounded-[28px] overflow-hidden relative shadow-sm border-[4px] border-white">
-                    <img src="line_oa_chat_260810_162659.jpeg" alt="บัญชี khunxkinji" class="w-full h-auto object-cover" onerror="this.src='https://placehold.co/600x600/FAEFE3/5C4A42?text=khunxkinji+Payment'">
+                    <img src="line_oa_chat_260810_162659.jpeg" alt="บัญชี khunxkinji" class="w-full h-auto object-cover" onerror="this.src='https://placehold.co/600x600/F9F2F4/5E424E?text=khunxkinji+Payment'">
                 </div>
             </div>
 
@@ -179,13 +179,13 @@
                             เลขบัญชีตามนี้เลยค้าบ
                             <svg class="w-4 h-4 text-brown-400 anim-pulse" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
                         </span>
-                        <br>ชื่อบัญชี <span class="text-brown-600 font-bold bg-[#F9F5EF] px-2.5 py-0.5 rounded-lg border border-[#E8DBD1] relative inline-block shadow-sm">
+                        <br>ชื่อบัญชี <span class="text-brown-600 font-bold bg-[#FBF8FA] px-2.5 py-0.5 rounded-lg border border-[#EBDDE2] relative inline-block shadow-sm">
                             ทวิพร นิลสนิท
                             <svg class="absolute -top-2 -right-2.5 w-4 h-4 text-brown-400 anim-float-3" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
                         </span> เท่านั้นคับ!!
                     </p>
                     
-                    <div class="inline-flex items-center justify-center gap-1.5 text-[11px] text-brown-500 font-medium bg-[#F9F5EF]/80 px-4 py-2.5 rounded-full border border-[#E8DBD1] shadow-sm whitespace-nowrap">
+                    <div class="inline-flex items-center justify-center gap-1.5 text-[11px] text-brown-500 font-medium bg-[#FBF8FA]/80 px-4 py-2.5 rounded-full border border-[#EBDDE2] shadow-sm whitespace-nowrap">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3.5 h-3.5 text-brown-400 shrink-0">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 013.75 9.375v-4.5zM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 01-1.125-1.125v-4.5zM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0113.5 9.375v-4.5z" />
                         </svg>
@@ -198,16 +198,16 @@
 
                 <!-- Divider -->
                 <div class="flex items-center gap-3 py-2">
-                    <div class="h-px bg-[#E8DBD1] flex-1"></div>
+                    <div class="h-px bg-[#EBDDE2] flex-1"></div>
                     <span class="text-[11px] font-semibold text-brown-400 tracking-wider uppercase">เลือกช่องทางชำระเงิน</span>
-                    <div class="h-px bg-[#E8DBD1] flex-1"></div>
+                    <div class="h-px bg-[#EBDDE2] flex-1"></div>
                 </div>
 
                 <!-- โซนบัญชีธนาคาร -->
                 <div class="space-y-4">
                     
                     <!-- บัตรกสิกรไทย (KBank) -->
-                    <div class="virtual-card relative bg-gradient-to-br from-[#B7A49C] to-[#8A756C] rounded-[24px] p-5 shadow-lg shadow-brown-500/20 overflow-hidden cursor-pointer border border-[#E8DBD1]/30" onclick="copyText('1571488856', this, 'kbank')">
+                    <div class="virtual-card relative bg-gradient-to-br from-[#C4AAB5] to-[#946E7E] rounded-[24px] p-5 shadow-lg shadow-brown-500/20 overflow-hidden cursor-pointer border border-[#EBDDE2]/30" onclick="copyText('1571488856', this, 'kbank')">
                         <svg class="absolute -right-6 -bottom-6 w-32 h-32 text-white opacity-10 transform -rotate-12 pointer-events-none" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
                         
                         <div class="relative z-10 flex flex-col gap-4">
@@ -228,7 +228,7 @@
                     </div>
 
                     <!-- บัตร TrueMoney -->
-                    <div class="virtual-card relative bg-gradient-to-br from-[#E8DBD1] to-[#B7A49C] rounded-[24px] p-5 shadow-lg shadow-brown-500/15 overflow-hidden cursor-pointer border border-white/50" onclick="copyText('0970141710', this, 'true')">
+                    <div class="virtual-card relative bg-gradient-to-br from-[#EBDDE2] to-[#C4AAB5] rounded-[24px] p-5 shadow-lg shadow-brown-500/15 overflow-hidden cursor-pointer border border-white/50" onclick="copyText('0970141710', this, 'true')">
                         <svg class="absolute -left-6 -top-6 w-32 h-32 text-white opacity-20 transform rotate-12 pointer-events-none" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
 
                         <div class="relative z-10 flex flex-col gap-4">
@@ -249,8 +249,8 @@
                     </div>
 
                     <!-- กล่องเตือน 1 -->
-                    <div class="relative bg-gradient-to-br from-[#F9F5EF] to-[#FAEFE3] rounded-[20px] p-3.5 border-2 border-dashed border-[#E8DBD1] shadow-sm z-10 overflow-hidden transform transition-transform hover:scale-[1.02] mt-1">
-                        <svg class="absolute -right-3 -bottom-3 w-14 h-14 text-[#E8DBD1]/40 transform -rotate-12 pointer-events-none" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                    <div class="relative bg-gradient-to-br from-[#FBF8FA] to-[#F6EDF1] rounded-[20px] p-3.5 border-2 border-dashed border-[#EBDDE2] shadow-sm z-10 overflow-hidden transform transition-transform hover:scale-[1.02] mt-1">
+                        <svg class="absolute -right-3 -bottom-3 w-14 h-14 text-[#EBDDE2]/40 transform -rotate-12 pointer-events-none" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
 
                         <div class="flex items-start gap-3 relative z-10">
                             <div class="bg-brown-500 p-1.5 rounded-full shadow-md text-white flex-shrink-0 mt-1 animate-bounce">
@@ -268,8 +268,8 @@
                     </div>
 
                     <!-- กล่องเตือน 2 -->
-                    <div class="bg-[#F9F5EF]/90 border border-[#E8DBD1] rounded-2xl p-3 flex items-start gap-3 text-left">
-                        <div class="bg-white p-1.5 rounded-full shadow-sm text-brown-400 flex-shrink-0 border border-[#E8DBD1]">
+                    <div class="bg-[#FBF8FA]/90 border border-[#EBDDE2] rounded-2xl p-3 flex items-start gap-3 text-left">
+                        <div class="bg-white p-1.5 rounded-full shadow-sm text-brown-400 flex-shrink-0 border border-[#EBDDE2]">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                             </svg>
@@ -284,8 +284,8 @@
                     </div>
 
                     <!-- กล่องเตือน 3 -->
-                    <div class="bg-[#FAEFE3]/90 border border-[#E8DBD1] rounded-2xl p-3 flex items-start gap-3 text-left">
-                        <div class="bg-white p-1.5 rounded-full shadow-sm text-brown-400 flex-shrink-0 border border-[#E8DBD1]">
+                    <div class="bg-[#F6EDF1]/90 border border-[#EBDDE2] rounded-2xl p-3 flex items-start gap-3 text-left">
+                        <div class="bg-white p-1.5 rounded-full shadow-sm text-brown-400 flex-shrink-0 border border-[#EBDDE2]">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
                             </svg>
